@@ -57,7 +57,9 @@ I configured a custom IAM policy that grants full management permissions for any
 
 ### Understanding Effect, Action, and Resource
 
-{1} Effect: Specifies whether to grant (`Allow`) or block (`Deny`) permissions. A `Deny` statement always overrides an `Allow.` {2} Action: Defines the specific AWS tasks or API operations targeted. It uses a `service:action` format, and wildcards (*) can group multiple actions. {3} Resource: Identifies the specific AWS objects the policy applies to. These are listed via ARNs, where a wildcard (*) applies the action to all resources.
+- Effect: Specifies whether to grant (`Allow`) or block (`Deny`) permissions. A `Deny` statement always overrides an `Allow.`
+- Action: Defines the specific AWS tasks or API operations targeted. It uses a `service:action` format, and wildcards (*) can group multiple actions.
+- Resource: Identifies the specific AWS objects the policy applies to. These are listed via ARNs, where a wildcard (*) applies the action to all resources.
 
 ---
 
