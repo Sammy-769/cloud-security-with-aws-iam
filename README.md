@@ -70,7 +70,7 @@ I configured a custom IAM policy that grants full management permissions for any
 
 ## My JSON Policy
 
-![Image](http://nextwork.ai/soothed_pink_vibrant_kangaroo/uploads/aws-security-iam_1c864649)
+![Image](screenshots/policy.png)
 
 ---
 
@@ -88,8 +88,7 @@ An account alias replaces the default 12-digit AWS Account ID in the sign-in por
 
 Setting up the alias took less than a minute. With the configuration complete, my new custom AWS console sign-in URL is `https://sam***.signin.aws.amazon.com/console`
 
-![Image](http://nextwork.ai/soothed_pink_vibrant_kangaroo/uploads/aws-security-iam_0eb4439b)
-
+![Image](screenshots/alias.png)
 ---
 
 ## IAM Users and User Groups
@@ -122,7 +121,7 @@ AWS provides two methods for sharing user credentials: you can either email the 
 
 Upon logging in as the new IAM user, I verified that access to unauthorized dashboards was successfully restricted. This behavior confirms that our custom IAM permissions are properly enforcing least-privilege access.
 
-![Image](http://nextwork.ai/soothed_pink_vibrant_kangaroo/uploads/aws-security-iam_6f2ab446)
+![Image](screenshots/signin.png)
 
 ---
 
@@ -140,13 +139,13 @@ I verified that the JSON IAM policy enforced permissions correctly based on reso
 
 Attempting to stop the production instance resulted in an explicit authorization error. This confirms the policy is working as intended, since the instance is tagged as Production, placing it outside the intern's authorized scope
 
-![Image](http://nextwork.ai/soothed_pink_vibrant_kangaroo/uploads/aws-security-iam_0e7a9d6a)
+![Image](screenshots/error.png)
 
 ### Stopping the development instance
 
 When I attempted to stop the development instance, the action was successful. This confirms that the IAM policy is working correctly, as it explicitly grants the intern permission to manage resources tagged for development.
 
-![Image](http://nextwork.ai/soothed_pink_vibrant_kangaroo/uploads/aws-security-iam_1811801c)
+![Image](screenshots/stopping.png)
 
 ---
 
@@ -162,8 +161,7 @@ The IAM Policy Simulator is a dedicated AWS tool designed for testing and troubl
 
 I simulated two distinct actions: stopping an instance and deleting a tag. Both actions were initially denied. However, once I adjusted the resource tag context to Development, the simulator successfully granted access to stop the instance while keeping tag deletion restricted.
 
-![Image](http://nextwork.ai/soothed_pink_vibrant_kangaroo/uploads/aws-security-iam_069d8a621)
-
+![Image](screenshots/simulator.png)
 ---
 
 ---
