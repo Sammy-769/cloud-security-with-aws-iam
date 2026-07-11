@@ -1,5 +1,3 @@
-<img src="https://cdn.prod.website-files.com/677c400686e724409a5a7409/6790ad949cf622dc8dcd9fe4_nextwork-logo-leather.svg" alt="NextWork" width="300" />
-
 # Cloud Security with AWS IAM
 
 **Project Link:** [View Project](http://nextwork.ai/projects/aws-security-iam)
@@ -43,8 +41,7 @@ Tags allow us to label and organize our AWS resources effectively. They provide 
 
 For this setup, I applied an Env (Environment) tag to the EC2 instances. The assigned values are Production and Development to clearly separate the two environment
 
-![Image](http://nextwork.ai/soothed_pink_vibrant_kangaroo/uploads/aws-security-iam_2e0e5a5d)
-
+![Image](screenshots/tags.png)
 ---
 
 ## IAM Policies
