@@ -1,13 +1,6 @@
 # Cloud Security with AWS IAM
-
-**Project Link:** [View Project](http://nextwork.ai/projects/aws-security-iam)
-
 **Author:** Sammy Shah Saleh  
 **Email:** sammysaleh769@gmail.com
-
----
-
-![Image](http://nextwork.ai/soothed_pink_vibrant_kangaroo/uploads/aws-security-iam_1c864649)
 
 ---
 
@@ -163,5 +156,8 @@ I simulated two distinct actions: stopping an instance and deleting a tag. Both 
 
 ![Image](screenshots/simulator.png)
 ---
+## Acknowledgements
+This project was completed as a guided hands-on lab through NextWork. The implementation, documentation, and GitHub repository were created and maintained by me.
 
+**Project Link:** [View Project](http://nextwork.ai/projects/aws-security-iam)
 ---
